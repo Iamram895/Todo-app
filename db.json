@@ -1,0 +1,142 @@
+{
+
+
+  "events":[
+    {
+         
+"id":1,
+"title" :"event-1",
+"category":"sports",
+"description":"Description-1",
+"date":  "october 4/2022"
+},
+{
+         
+  "id":2,
+  "title" :"event-2",
+  "category":"entertaiment",
+  "description":"Description-2",
+  "date":  "october 4/2022"
+  },
+  {
+         
+    "id":3,
+    "title" :"event-3",
+    "category":"sports",
+    "description":"Description-3",
+    "date":  "october 4/2022"
+    },
+
+    {
+         
+      "id":5,
+      "title" :"event-5",
+      "category":"sports",
+      "description":"Description-5",
+      "date":  "october 4/2022"
+      },
+      {
+         
+        "id":6,
+        "title" :"event-6",
+        "category":"politics",
+        "description":"Description-6",
+        "date":  "october 4/2022"
+        },
+        {
+         
+          "id":7,
+          "title" :"event-7",
+          "category":"entertaiment",
+          "description":"Description-7",
+          "date":  "october 4/2022"
+          },
+          {
+         
+            "id":8,
+            "title" :"event-8",
+            "category":"politics",
+            "description":"Description-8",
+            "date":  "october 4/2022"
+            },
+            {
+         
+              "id":9,
+              "title" :"event-9",
+              "category":"politics",
+              "description":"Description-9",
+              "date":  "october 4/2022"
+              },
+
+              {
+         
+                "id":10,
+                "title" :"event-10",
+                "category":"sports",
+                "description":"Description-10",
+                "date":  "october 4/2022"
+                }
+
+
+
+  ],
+
+
+
+  
+
+  "dashboard":{
+    "post":10,
+    "likes":200,
+    "follwers":20,
+    "following":50
+  },
+
+  "news":[
+
+{   
+"id":1,
+"title" :"news Article-1",
+"category":"sports",
+"description":"Description-1"
+},
+{   
+"id":2,
+"title" :"news Article-2",
+"category":"politics",
+"description":"Description-2"
+},
+{   
+"id":3,
+"title" :"news Article-3",
+"category":"sports",
+"description":"Description-3"
+}
+
+
+  ],
+
+  "products":[
+
+    {   
+    "id":1,
+    "title" :"products-1",
+    "category":"sports",
+    "description":"Description-1"
+    },
+    {   
+    "id":2,
+    "title" :"products-2",
+    "price":1500,
+    "description":"Description-2"
+    },
+    {   
+    "id":3,
+    "title" :"products-3",
+    "price":2000,
+    "description":"Description-3"
+    }
+    
+    
+      ]
+}

@@ -21,25 +21,21 @@ const index = () => {
     });
   };
 
-  //   const reorder = (list, startIndex, endIndex) => {
-  //     const result = Array.from(list);
-  //     const [removed] = result.splice(startIndex, );
-  //     result.splice(endIndex,  removed);
-  //     return result;
-  //   };
+ 
 
-  const onDragEnd = () => {
-    // if (!result.destination) {
-    //   return result;
+  const onDragEnd = (result) => {
+    console.log(result);
+    
+    const {source,destination}= result
+     if (!result.destination) {
+      return result;
   };
-  //     const reOrderItems = reorder(
-  //       data,
-  //       result.source.index,
-  //       result.destination.index
-  //     );
-  //     console.log(reOrderItems);
-  //     setData(reOrderItems);
-  //   };
+      const Items = data
+      const [reorderItem]=Items.splice(source.index,1)
+      Items.splice(destination.index,0,reorderItem)
+
+      setData(Items);
+}
 
   return (
     <>
@@ -50,14 +46,11 @@ const index = () => {
         value={item}
       />
       <button onClick={addItem}> add item</button>
-      <DragDropContext onDragEnd={() => {}}>
-        <Droppable droppableId="droppable-1">
+      <DragDropContext onDragEnd={onDragEnd}>
+        <Droppable droppableId="droppable1">
           {(provided, snapshot) => (
             <div
               ref={provided.innerRef}
-              //   style={{
-              //     backgroundColor: snapshot.isDraggingOver ? "blue" : "grey",
-              //   }}
               {...provided.droppableProps}
             >
               {data.map((elem, index) => {
@@ -72,7 +65,7 @@ const index = () => {
                 };
                 return (
                   <>
-                    <Draggable key={index} draggableId={elem} index={index}>
+                    <Draggable key={index} draggableId={`data${index}`} index={index}>
                       {(provided, snapshot) => (
                         <>
                           <div
@@ -89,7 +82,7 @@ const index = () => {
                               onSelect={removeItem}
 
                             />
-                            {provided.placeholder}
+                            {/* {provided.placeholder} */}
                           </div>
                         </>
                       )}
